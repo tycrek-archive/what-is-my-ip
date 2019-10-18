@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tycrek/what-is-my-ip/issues"
   },
-  "homepage": "https://github.com/tycrek/what-is-my-ip#readme"
+  "homepage": "https://github.com/tycrek/what-is-my-ip#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
