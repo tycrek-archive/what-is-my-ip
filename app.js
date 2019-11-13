@@ -5,7 +5,7 @@ const LOCALS = ['localhost', '127.0.0.1', '::1'];
 var app = require('express')();
 
 app.get('/(:mode)?', (req, res) => {
-	let ip = req.ip;
+	let ip = req.get('X-Real-IP');
 	let mode = req.params.mode;
 	let json = mode && mode.includes('json');
 
